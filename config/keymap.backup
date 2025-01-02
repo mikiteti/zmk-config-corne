@@ -1,0 +1,65 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        Caps_lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <24 35>;
+        };
+    };
+
+    behaviors {
+        Zero_grave: Zero_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_GRAVE";
+            bindings = <&kp KP_NUMBER_0>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        backdel: backdel {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKDEL";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        Base {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E           &kp R  &kp T             &kp Y                 &kp U  &kp I      &kp O    &kp P     &kp BSLH
+&kp ESC    &kp A  &kp S  &kp D           &kp F  &kp G             &kp H                 &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C           &kp V  &kp B             &kp N                 &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &mt LCTRL LGUI  &mo 1  &mt LALT SPACE    &mt RIGHT_META ENTER  &mo 1  &backdel
+            >;
+        };
+
+        Raise {
+            bindings = <
+&trans  &kp PERCENT  &kp CARET        &kp AMPS   &kp ASTRK       &none         &kp LEFT_BRACE        &kp N7  &kp N8       &kp N9  &kp RIGHT_BRACE        &none
+&mo 2   &kp PLUS     &kp MINUS        &kp EQUAL  &kp UNDERSCORE  &kp TILDE     &kp LEFT_PARENTHESIS  &kp N4  &kp N5       &kp N6  &kp RIGHT_PARENTHESIS  &mo 2
+&trans  &kp GRAVE    &kp EXCLAMATION  &kp AT     &kp HASH        &kp DOLLAR    &kp LEFT_BRACKET      &kp N1  &kp N2       &kp N3  &kp RIGHT_BRACKET      &trans
+                                      &trans     &mo 2           &trans        &trans                &mo 2   &Zero_grave
+            >;
+        };
+
+        Lower {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7           &kp F8        &kp F9        &kp F10       &kp F11   &kp F12
+&none   &none   &none   &none   &none   &none     &kp LEFT         &kp DOWN      &kp UP        &kp RIGHT     &kp HOME  &kp PAGE_UP
+&trans  &none   &none   &none   &none   &none     &kp PRINTSCREEN  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp END   &kp PAGE_DOWN
+                        &trans  &trans  &trans    &trans           &trans        &trans
+            >;
+        };
+    };
+};
