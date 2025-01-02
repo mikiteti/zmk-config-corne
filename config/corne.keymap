@@ -5,14 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Caps_lock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <24 35>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         Zero_grave: Zero_grave {
