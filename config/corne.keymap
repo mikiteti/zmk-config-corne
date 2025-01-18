@@ -77,10 +77,10 @@
 
         Raise {
             bindings = <
-&trans  &kp GRAVE      &kp EXCLAMATION     &kp AT           &kp HASH                   &kp DOLLAR    &kp LEFT_BRACE        &kp N7         &kp N8        &kp N9            &kp RIGHT_BRACE             &none
-&mo 2   &mt LGUI PLUS  &mt LEFT_ALT MINUS  &mt LCTRL EQUAL  &mt LEFT_SHIFT UNDERSCORE  &kp TILDE     &kp LEFT_PARENTHESIS  &mt RSHIFT N4  &mt RCTRL N5  &mt RIGHT_ALT N6  &mt RGUI RIGHT_PARENTHESIS  &mo 2
-&trans  &kp PERCENT    &kp CARET           &kp AMPERSAND    &kp ASTRK                  &none         &kp LEFT_BRACKET      &kp N1         &kp N2        &kp N3            &kp RIGHT_BRACKET           &trans
-                                           &trans           &trans                     &trans        &trans                &trans         &Zero_grave
+&trans  &kp GRAVE      &kp EXCLAMATION     &kp AT           &kp HASH                   &kp DOLLAR           &kp LEFT_BRACE        &kp N7         &kp N8        &kp N9            &kp RIGHT_BRACE             &none
+&mo 2   &mt LGUI PLUS  &mt LEFT_ALT MINUS  &mt LCTRL EQUAL  &mt LEFT_SHIFT UNDERSCORE  &kp TILDE            &kp LEFT_PARENTHESIS  &mt RSHIFT N4  &mt RCTRL N5  &mt RIGHT_ALT N6  &mt RGUI RIGHT_PARENTHESIS  &mo 2
+&trans  &kp PERCENT    &kp CARET           &kp AMPERSAND    &kp ASTRK                  &kp DOUBLE_QUOTES    &kp LEFT_BRACKET      &kp N1         &kp N2        &kp N3            &kp RIGHT_BRACKET           &trans
+                                           &trans           &trans                     &trans               &trans                &trans         &Zero_grave
             >;
         };
 
