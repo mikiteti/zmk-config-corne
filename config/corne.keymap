@@ -32,7 +32,7 @@
             bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         down: down {
@@ -41,7 +41,7 @@
             bindings = <&kp DOWN>, <&mmv MOVE_DOWN>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         up: up {
@@ -50,7 +50,7 @@
             bindings = <&kp UP_ARROW>, <&mmv MOVE_UP>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
 
         right: right {
@@ -59,7 +59,7 @@
             bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
@@ -77,10 +77,10 @@
 
         Raise {
             bindings = <
-&trans  &kp GRAVE      &kp EXCLAMATION     &kp AT           &kp HASH                   &kp DOLLAR           &kp LEFT_BRACE        &kp N7         &kp N8        &kp N9            &kp RIGHT_BRACE             &none
-&mo 2   &mt LGUI PLUS  &mt LEFT_ALT MINUS  &mt LCTRL EQUAL  &mt LEFT_SHIFT UNDERSCORE  &kp TILDE            &kp LEFT_PARENTHESIS  &mt RSHIFT N4  &mt RCTRL N5  &mt RIGHT_ALT N6  &mt RGUI RIGHT_PARENTHESIS  &mo 2
-&trans  &kp PERCENT    &kp CARET           &kp AMPERSAND    &kp ASTRK                  &kp DOUBLE_QUOTES    &kp LEFT_BRACKET      &kp N1         &kp N2        &kp N3            &kp RIGHT_BRACKET           &trans
-                                           &trans           &trans                     &trans               &trans                &trans         &Zero_grave
+&trans  &kp PERCENT     &kp AMPS                    &kp HASH         &kp DOLLAR                 &kp AT         &kp LEFT_BRACE        &kp N7         &kp N8        &kp N9            &kp RIGHT_BRACE             &none
+&mo 2   &mt LGUI GRAVE  &mt LEFT_ALT DOUBLE_QUOTES  &mt LCTRL EQUAL  &mt LEFT_SHIFT UNDERSCORE  &kp TILDE      &kp LEFT_PARENTHESIS  &mt RSHIFT N4  &mt RCTRL N5  &mt RIGHT_ALT N6  &mt RGUI RIGHT_PARENTHESIS  &mo 2
+&trans  &kp ASTERISK    &kp EXCLAMATION             &kp PLUS         &kp MINUS                  &kp CARET      &kp LEFT_BRACKET      &kp N1         &kp N2        &kp N3            &kp RIGHT_BRACKET           &trans
+                                                    &trans           &trans                     &Zero_grave    &trans                &trans         &trans
             >;
         };
 
