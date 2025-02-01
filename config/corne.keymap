@@ -75,7 +75,7 @@
             >;
         };
 
-        Raise {
+        Lower {
             bindings = <
 &trans  &kp PERCENT     &kp AMPS                    &kp HASH         &kp DOLLAR                 &kp AT         &kp LEFT_BRACE        &kp N7         &kp N8        &kp N9            &kp RIGHT_BRACE             &none
 &mo 2   &mt LGUI GRAVE  &mt LEFT_ALT DOUBLE_QUOTES  &mt LCTRL EQUAL  &mt LEFT_SHIFT UNDERSCORE  &kp TILDE      &kp LEFT_PARENTHESIS  &mt RSHIFT N4  &mt RCTRL N5  &mt RIGHT_ALT N6  &mt RGUI RIGHT_PARENTHESIS  &mo 2
@@ -84,7 +84,7 @@
             >;
         };
 
-        Lower {
+        Upper {
             bindings = <
 &kp F1  &kp F2    &kp F3        &kp F4     &kp F5      &kp F6    &kp F7          &kp F8          &kp F9        &kp F10          &kp F11   &kp F12
 &none   &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHIFT  &none     &left           &down           &up           &right           &kp HOME  &kp PAGE_UP
