@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -70,7 +69,7 @@
             bindings = <
 &kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I        &kp O            &kp P          &kp BSLH
 &kp ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SEMI  &kp SQT
-&mkp LCLK   &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA    &kp DOT          &kp FSLH       &mkp RCLK
+&kp LGUI    &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA    &kp DOT          &kp FSLH       &kp RCTRL
                                             &kp LEFT_SHIFT      &mo 2             &kp SPACE    &kp ENTER  &mo 1              &backdel
             >;
         };
