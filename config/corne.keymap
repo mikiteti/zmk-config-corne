@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -21,6 +22,29 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    macros {
+        terminal: terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCMD &kp T &kt LCMD>;
+            label = "TERMINAL";
+        };
+
+        chrome: chrome {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCMD &kp C &kt LCMD>;
+            label = "CHROME";
+        };
+
+        explorer: explorer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LCMD &kp F &kt LCMD>;
+            label = "EXPLORER";
         };
     };
 
@@ -49,7 +73,7 @@
             bindings = <
 &kp F1  &kp F2      &kp F3     &kp F4        &kp F5     &kp F6        &kp F7    &kp F8    &kp F9  &kp F10    &kp F11   &kp F12
 &none   &sk LSHIFT  &sk LGUI   &sk LEFT_ALT  &sk LCTRL  &caps_word    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PAGE_UP
-&trans  &none       &kp LG(F)  &kp LG(C)     &kp LG(T)  &none         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END   &kp PAGE_DOWN
+&trans  &none       &explorer  &chrome       &terminal  &none         &kp LEFT  &kp TAB   &kp UP  &kp RIGHT  &kp END   &kp PAGE_DOWN
                                &trans        &trans     &trans        &trans    &trans    &trans
             >;
         };
