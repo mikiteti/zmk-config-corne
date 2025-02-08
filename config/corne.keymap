@@ -55,7 +55,7 @@
             bindings = <
 &none  &kp HASH  &kp AMPS   &kp PERCENT  &kp DOLLAR     &kp AT       &none   &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &none  &none
 &none  &kp EXCL  &kp MINUS  &kp EQUAL    &kp UNDER      &kp TILDE    &none   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &none  &none
-&none  &none     &kp PLUS   &kp ASTRK    &kp BACKSLASH  &kp CARET    &none   &kp APOS         &kp DOUBLE_QUOTES      &kp GRAVE          &none  &none
+&none  &kp PIPE  &kp PLUS   &kp ASTRK    &kp BACKSLASH  &kp CARET    &none   &kp APOS         &kp DOUBLE_QUOTES      &kp GRAVE          &none  &none
                             &none        &mo 3          &trans       &trans  &none            &trans
             >;
         };
